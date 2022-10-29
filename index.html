@@ -1,1 +1,53 @@
+<!doctype html>
+<html>
 
+<head>
+    <script>
+        var num, temp;
+        function oddOrEven() {
+            num = parseInt(document.getElementById("num").value);
+            if (num) {
+                if (num) {
+                    temp = document.getElementById("outputPara");
+                    temp.style.display = "block";
+                    if (num % 2 == 0)
+                        document.getElementById("output").innerHTML = "Even";
+                    else
+                        document.getElementById("output").innerHTML = "Odd";
+                }
+
+            }
+            else {
+                document.getElementById("output").innerHTML = "not an valid";
+            }
+        }
+
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <h2>JavaScript Program to Check Even or Odd Number
+        </h1>
+        <p>Enter the Number:
+        <div class="user-box">
+            <input id="num">
+        </div>
+        <span>
+            <center>
+                <button class="button-85" onclick="oddOrEven()">Check</button>
+            </center>
+        </span>
+        </p>
+
+
+        <p id="outputPara" style="display:none;">It is  <u id="output"></u> Number</p>
+
+
+    </div>
+
+</body>
+
+</html>
+<!--Created By Anshul Soni-->
